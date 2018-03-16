@@ -144,6 +144,7 @@ fi
 
 if [[ $REGISTER -eq 1 ]]; then
     echo "Registering images"
+    FILENAME=centos7_sahara_vanilla_hadoop_2_8_2_latest
     KERNEL_ID=`glance image-create --name ${IMAGE_NAME}-kernel \
                                    --visibility public \
                                    --disk-format=aki \

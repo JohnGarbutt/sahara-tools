@@ -1,7 +1,7 @@
 export OS_DISTRO=centos7
 export PLUGIN=vanilla
 export SPARK_VERSION=2.1.0
-export HADOOP_VERSION=2.8.0
+export HADOOP_VERSION=2.8.2
 export EXTRA_ELEMENTS="mlnx-ofed" 
 
 # Use the HiBD spark distribution.
@@ -11,20 +11,19 @@ export SPARK_DOWNLOAD_URL="http://hibd.cse.ohio-state.edu/download/hibd/rdma-spa
 export DIB_HADOOP_DOWNLOAD_URL="http://hibd.cse.ohio-state.edu/download/hibd/rdma-hadoop-2.x-1.3.0-x86-bin.tar.gz"
 
 # Note: Use HiBD's native Hadoop libraries.
-export HADOOP_V2_8_0_NATIVE_LIBS_DOWNLOAD_URL="none"
-
-## Use our locally built hadoop 2.8.0 native libraries.
-#export HADOOP_V2_8_0_NATIVE_LIBS_DOWNLOAD_URL=http://10.41.253.100:4120/hadoop-native-libs-2.8.0.tar.gz
+export HADOOP_V2_8_2_NATIVE_LIBS_DOWNLOAD_URL="none"
 
 # Workaround lack of oozie for 2.8.0.
-export OOZIE_HADOOP_V2_8_0_DOWNLOAD_URL="http://sahara-files.mirantis.com/oozie-4.2.0-hadoop-2.7.1.tar.gz"
+export OOZIE_HADOOP_V2_8_2_DOWNLOAD_URL="http://sahara-files.mirantis.com/oozie-4.2.0-hadoop-2.7.1.tar.gz"
 
 # Workaround lack of swift for 2.8.0.
 export swift_url="http://tarballs.openstack.org/sahara/dist/hadoop-openstack/master/hadoop-openstack-2.7.1.jar"
 
 # Mellanox OFED packages.
-export DIB_MLNX_OFED_REPO=http://10.41.253.100:4120/MLNX_OFED_LINUX-4.0-2.0.0.1-rhel7.3-x86_64
-export DIB_MLNX_OFED_VERSION=4.0-2.0.0.1
+#export DIB_MLNX_OFED_REPO=http://10.41.253.100:4120/MLNX_OFED_LINUX-4.0-2.0.0.1-rhel7.3-x86_64
+#export DIB_MLNX_OFED_VERSION=4.0-2.0.0.1
+export DIB_MLNX_OFED_REPO=http://10.41.253.100:4120/MLNX_OFED_LINUX-4.1-1.0.2.0-rhel7.4-x86_64
+export DIB_MLNX_OFED_VERSION=4.1-1.0.2.0
 
 # pin us to a version that matches the above centos 7.3 targeted binaries
-export BASE_IMAGE_FILE=CentOS-7-x86_64-GenericCloud-1707.qcow2
+#export BASE_IMAGE_FILE=CentOS-7-x86_64-GenericCloud-1707.qcow2
